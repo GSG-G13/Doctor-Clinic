@@ -1,6 +1,21 @@
 const submitBtn = document.getElementById('submitBtn');
 const table = document.querySelector('.table');
 
+const addPatientBtn = document.getElementById('add-patient');
+const closePopup = document.querySelector('.close');
+const outerPopup = document.querySelector('.outer-popup');
+const overlay = document.querySelector('.overlay');
+
+addPatientBtn.addEventListener('click', () => {
+  outerPopup.style.display = 'flex';
+  overlay.style.display = 'block';
+});
+
+closePopup.addEventListener('click', () => {
+  outerPopup.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
 fetch('/patient')
   .then((res) => res.json())
   .then((data) => {
@@ -12,10 +27,12 @@ fetch('/patient')
   });
 
 submitBtn.addEventListener('click', () => {
-  const nameInput = document.getElementById('name-input');
-  const phoneInput = document.getElementById('phone-input');
-  const genderInput = document.getElementById('gender-input');
-  const doctorInput = document.getElementById('doctor-input');
+  console.log();
+  const nameInput = document.getElementById('patient-name');
+  const phoneInput = document.getElementById('patient-phone');
+  const genderInput = document.querySelector('input[name="patientGender"]:checked');
+  const selectDoctor = document.getElementById('doctors');
+  const doctorInput = selectDoctor.options[selectDoctor.selectedIndex];
 
   fetch('/patient', {
     method: 'POST',
