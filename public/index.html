@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Doctor Clinic</title>
+  <link rel="shortcut icon" href="./images/doctor.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  <script src="./patients/script.js"></script>
+
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <div class="container">
+        <div class="text-center">
+          <a href="/" class="nav-brand" style="color: #fff;">Doctor Clinic System</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /Header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+      <div class="add-btn">
+        <a href="/add-user" class="border-shadow">
+          <span class="text-gradient">New Patient <i class="fas fa-user"></i></span>
+        </a>
+      </div>
+
+      <!-- Table handling -->
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>Entered At</th>
+            <th>Doctor</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              5
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              <a href="/update-user?id=4" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+              </a>
+              <a class="btn border-shadow delete" href="/update-user?id=4">
+                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              5
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              <a href="/update-user?id=4" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+              </a>
+              <a class="btn border-shadow delete" href="/update-user?id=4">
+                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              5
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              4
+            </td>
+            <td>
+              <a href="/update-user?id=4" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+              </a>
+              <a class="btn border-shadow delete" href="/update-user?id=4">
+                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Table handling -->
+
+    </div>
+  </main>
+  <!-- /Main Site -->
+
+  <script src="./javascript/dom.js"></script>
+  <script src="./javascript/script.js"></script>
 </body>
+
 </html>
