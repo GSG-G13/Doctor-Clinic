@@ -1,4 +1,4 @@
 const getPatientsController = require('./getPatientsController');
-// const addPatientController = require('./addPatientController');
+const addPatientController = require('./addPatientController');
 
-module.exports = { getPatientsController };
+module.exports = { getPatientsController, addPatientController };
