@@ -1,8 +1,8 @@
-const connection = require('../../config');
+const { connection } = require('../../config');
 
 const getPatients = () => {
   const sql = {
-    text: 'SELECT * FROM patients',
+    text: 'SELECT * FROM patients;',
   };
   return connection.query(sql);
 };
