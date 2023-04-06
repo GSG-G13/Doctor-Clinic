@@ -47,92 +47,7 @@
             <th>Action</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              1
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              5
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              <a href="/update-user?id=4" class="btn border-shadow update">
-                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
-              </a>
-              <a class="btn border-shadow delete" href="/update-user?id=4">
-                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              1
-            </td>
-            <td>
-              1
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              5
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              <a href="/update-user?id=4" class="btn border-shadow update">
-                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
-              </a>
-              <a class="btn border-shadow delete" href="/update-user?id=4">
-                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              1
-            </td>
-            <td>
-              1
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              5
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              4
-            </td>
-            <td>
-              <a href="/update-user?id=4" class="btn border-shadow update">
-                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
-              </a>
-              <a class="btn border-shadow delete" href="/update-user?id=4">
-                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
-              </a>
-            </td>
-          </tr>
-        </tbody>
+        <tbody></tbody>
       </table>
       <!-- Table handling -->
 
@@ -154,13 +69,13 @@
            
             <div class="input-box">
               <span class="details">Phone Number</span>
-              <input name="patientPhone" id="patient-phone" type="text" placeholder="Enter your number" required>
+              <input name="patientPhone" id="patient-phone" type="number" placeholder="Enter your number" required>
             </div>
             
           </div>
           <div class="input-box">
-            <select id="doctors">
-              <option value="Ahmed">Ahmed</option>
+            <select id="doctors" required>
+              <option value="">Select Doctor</option>
             </select>
           </div>
           <div class="gender-details">

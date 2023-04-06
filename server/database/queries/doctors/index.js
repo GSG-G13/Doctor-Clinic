@@ -1,3 +1,4 @@
 const getDoctors = require('./getDoctors');
+const getDoctorName = require('./getDoctorName');
 
-module.exports = { getDoctors };
+module.exports = { getDoctors, getDoctorName };
