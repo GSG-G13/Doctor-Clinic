@@ -24,25 +24,8 @@ const createRow = (patient) => {
   const gender = createHTMLElement('td', null, null, patient.gender);
   const enteredAt = createHTMLElement('td', null, null, patient.entered_at);
   const doctor = createHTMLElement('td', null, null, patient.doctor_name);
-  const Actions = createHTMLElement('td');
 
-  const editLink = createHTMLElement('a', 'btn border-shadow update');
-  editLink.setAttribute('href', '/update-user?id=4');
-  const editSpan = createHTMLElement('span', 'text-gradient');
-  appendChildren(editLink, editSpan);
-  const editIcon = createHTMLElement('i', 'fas fa-pencil-alt');
-  appendChildren(editSpan, editIcon);
-
-  const deleteLink = createHTMLElement('a', 'btn border-shadow delete');
-  deleteLink.setAttribute('href', '/update-user?id=4');
-  const deleteSpan = createHTMLElement('span', 'text-gradient');
-  appendChildren(deleteLink, deleteSpan);
-  const deleteIcon = createHTMLElement('i', 'fa-solid fa-trash');
-  appendChildren(deleteSpan, deleteIcon);
-
-  appendChildren(Actions, editLink, deleteLink);
-
-  appendChildren(row, id, name, phone, gender, enteredAt, doctor, Actions);
+  appendChildren(row, id, name, phone, gender, enteredAt, doctor);
 
   return row;
 };

@@ -190,6 +190,7 @@ table {
     transform: translate(-50%, -50%);
     z-index: 9999;
     font-family: 'Poppins', sans-serif;
+    transition: 0.5s ease-in-out;
 }
 
 .outer-popup .container {

@@ -69,6 +69,8 @@ submitBtn.addEventListener('click', () => {
       const line = createRow(data.data);
       table.appendChild(line);
     });
+  outerPopup.style.display = 'none';
+  overlay.style.display = 'none';
 
   nameInput.value = '';
   phoneInput.value = '';
