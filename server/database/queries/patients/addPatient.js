@@ -1,11 +1,11 @@
 const { connection } = require('../../config');
 
 const addPatient = ({
-  name, phone, gender, doctorId,
+  patientName, patientPhone, patientGender, doctorId,
 }) => {
   const sql = {
-    text: 'INSERT INTO patients(name, phone,gender, doctor) VALUES($1, $2, $3, $4) RETURNING *',
-    values: [name, phone, gender, doctorId],
+    text: 'INSERT INTO patients(name, phone, gender, doctor_id) VALUES($1, $2, $3, $4) RETURNING id, name, phone, gender, entered_at, doctor_id',
+    values: [patientName, patientPhone, patientGender, doctorId],
   };
   return connection.query(sql);
 };
