@@ -1,9 +1,14 @@
 const submitBtn = document.getElementById('submitBtn');
+const table = document.querySelector('.table');
 
 fetch('/patient')
   .then((res) => res.json())
   .then((data) => {
-    console.log(data);
+    data.forEach((patient) => {
+      // eslint-disable-next-line no-undef
+      const line = createRow(patient);
+      table.appendChild(line);
+    });
   });
 
 submitBtn.addEventListener('click', () => {
@@ -21,12 +26,17 @@ submitBtn.addEventListener('click', () => {
       patientGender: genderInput.value,
       doctorId: doctorInput.value,
     }),
-  })
-  .then((data) => console.log(data.patient));
+  }).then((res) => res.json())
+    .then((data) => {
+      data.forEach((patient) => {
+        // eslint-disable-next-line no-undef
+        const line = createRow(patient);
+        table.appendChild(line);
+      });
+    });
 
-  nameInput.value = '',
-  phoneInput.value = '',
-  genderInput.value = '',
-  doctorInput.value = '',
+  nameInput.value = '';
+  phoneInput.value = '';
+  genderInput.value = '';
+  doctorInput.value = '';
 });
-
