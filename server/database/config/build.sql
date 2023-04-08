@@ -15,14 +15,11 @@ CREATE TABLE patients(
   gender VARCHAR(50) NOT NULL,
   entered_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   doctor_id INTEGER,
-  FOREIGN KEY (doctor_id) REFERENCES doctors(id) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (doctor_id) REFERENCES doctors(id) --ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-INSERT INTO doctors(name, phone) VALUES ('ahmed', 12354);
-INSERT INTO doctors(name, phone) VALUES ('abeer', 56589);
-
-
-INSERT INTO patients(name, phone, gender, doctor_id) VALUES ('ffffffff', 12354,'male',1);
-INSERT INTO patients(name, phone, gender, doctor_id) VALUES ('ggggggg', 565,'female',2);
+INSERT INTO doctors(name, phone) VALUES ('Nada Abu Zaid', 0594556564);
+INSERT INTO doctors(name, phone) VALUES ('Alaa Ahmed', 0594149120);
+INSERT INTO doctors(name, phone) VALUES ('Khaled Nabaheen', 0594148950);
 
 COMMIT;
