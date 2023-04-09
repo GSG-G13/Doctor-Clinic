@@ -166,7 +166,7 @@ table {
 }
 
 /* Add Patient .form */
-.overlay{
+.overlay {
     display: none;
     position: absolute;
     top: 0;
@@ -177,6 +177,7 @@ table {
     background-color: rgba(0, 0, 0, 0.7);
     pointer-events: all;
 }
+
 .outer-popup {
     display: none;
     justify-content: center;
