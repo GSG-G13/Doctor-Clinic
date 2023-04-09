@@ -41,7 +41,7 @@ You can see our demo website [Here](https://doctor-clinic.onrender.com/).
 - CSS
 - JavaScript
 - Node JS
-- Expres
+- Express
 - Postgresql
 - Git & Github
 
