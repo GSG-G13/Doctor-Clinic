@@ -14,7 +14,6 @@ const phoneInput = document.getElementById('patient-phone');
 fetch('/doctors')
   .then((res) => res.json())
   .then((data) => {
-    console.log(data);
     data.forEach((doctor) => {
       // eslint-disable-next-line no-undef
       const doctorOption = createOption(doctor);
