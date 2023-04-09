@@ -20,7 +20,7 @@ You can see our demo website [Here](https://doctor-clinic.onrender.com/).
 
 ## User Stories 📚
 
-- As a secretary, I need to be able to add details for patients.
+- As a secretary, I should to be able to add details for patients.
 - As a secretary, I should be able to add the name, phone and gender of the patient and display them in the database.
 ---
 
